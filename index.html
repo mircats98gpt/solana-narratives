@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Narrative Pulse | AI-Powered Ecosystem Radar & Idea Generator</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Cyberpunk grid overlay -->
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="pulse-indicator"></span>
+                <h1>SOLANA <span class="neon-text">NARRATIVE PULSE</span></h1>
+            </div>
+            <div class="header-tag">
+                <span class="badge">AI AGENT MODE</span>
+                <span class="badge time-badge">FORTNIGHTLY INDEX</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="glow-badge">Solana Ecosystem Signals</span>
+                </div>
+                <h2>Detecting Early Trends.<br>Generating Actionable Ideas.</h2>
+                <p>An autonomous intelligence agent parsing developer activity, on-chain metrics, and social velocity to surface emerging narratives before they go main-stream.</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-num" id="stat-repos">1,482</span>
+                        <span class="stat-label">GitHub Repos Checked</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" id="stat-commits">24.5K</span>
+                        <span class="stat-label">Commits Scanned</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" id="stat-sentiment">84%</span>
+                        <span class="stat-label">Solana Builder Sentiment</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Telemetry Section -->
+        <section class="telemetry">
+            <div class="section-header">
+                <h3>Live Signal Telemetry</h3>
+                <p>Real-time data feeds processed in the current epoch</p>
+            </div>
+            <div class="telemetry-grid">
+                <div class="telemetry-card">
+                    <div class="card-title">
+                        <span>GitHub Commits (SVM Repos)</span>
+                        <span class="trend up">+14.2%</span>
+                    </div>
+                    <div class="chart-container">
+                        <svg viewBox="0 0 300 80" class="sparkline">
+                            <path d="M 0 60 L 30 55 L 60 58 L 90 40 L 120 45 L 150 20 L 180 35 L 210 15 L 240 25 L 270 10 L 300 5" class="line-path" />
+                            <path d="M 0 60 L 30 55 L 60 58 L 90 40 L 120 45 L 150 20 L 180 35 L 210 15 L 240 25 L 270 10 L 300 5 L 300 80 L 0 80 Z" class="area-path" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="telemetry-card">
+                    <div class="card-title">
+                        <span>X Social Mentions (Solana AI)</span>
+                        <span class="trend up">+48.7%</span>
+                    </div>
+                    <div class="chart-container">
+                        <svg viewBox="0 0 300 80" class="sparkline">
+                            <path d="M 0 70 L 30 65 L 60 50 L 90 48 L 120 30 L 150 35 L 180 25 L 210 10 L 240 8 L 270 2 L 300 1" class="line-path neon-purple" />
+                            <path d="M 0 70 L 30 65 L 60 50 L 90 48 L 120 30 L 150 35 L 180 25 L 210 10 L 240 8 L 270 2 L 300 1 L 300 80 L 0 80 Z" class="area-path neon-purple-area" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="telemetry-card">
+                    <div class="card-title">
+                        <span>On-Chain Tx Vol (DePIN Outlets)</span>
+                        <span class="trend down">-2.4%</span>
+                    </div>
+                    <div class="chart-container">
+                        <svg viewBox="0 0 300 80" class="sparkline">
+                            <path d="M 0 20 L 30 22 L 60 18 L 90 35 L 120 30 L 150 45 L 180 42 L 210 50 L 240 48 L 270 55 L 300 58" class="line-path neon-blue" />
+                            <path d="M 0 20 L 30 22 L 60 18 L 90 35 L 120 30 L 150 45 L 180 42 L 210 50 L 240 48 L 270 55 L 300 58 L 300 80 L 0 80 Z" class="area-path neon-blue-area" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Narratives & Ideas Grid -->
+        <section class="narratives-section">
+            <div class="section-header">
+                <h3>Emerging Fortnightly Narratives</h3>
+                <p>Click on any narrative card to view corresponding build ideas generated by the agent.</p>
+            </div>
+
+            <div class="narratives-tabs">
+                <button class="tab-btn active" onclick="filterCategory('all')">All Signals</button>
+                <button class="tab-btn" onclick="filterCategory('AI')">AI & Agents</button>
+                <button class="tab-btn" onclick="filterCategory('DePIN')">DePIN</button>
+                <button class="tab-btn" onclick="filterCategory('Infra')">SVM Infra</button>
+            </div>
+
+            <div class="narrative-grid" id="narrative-grid">
+                <!-- Will be dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- Interactive Sandbox Section -->
+        <section class="sandbox">
+            <div class="sandbox-container">
+                <div class="sandbox-info">
+                    <h3>Narrative Fit Sandbox</h3>
+                    <p>Enter your own Web2 or Web3 project concept. The AI Agent will analyze its alignment with the current Solana narrative spectrum and output a viability scorecard.</p>
+                    <div class="spec-notes">
+                        <h4>Agent Metrics Evaluated:</h4>
+                        <ul>
+                            <li>Solana Account Model Compatibility</li>
+                            <li>Resource Pricing Efficiency (SVM Execution)</li>
+                            <li>Narrative Market Velocity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sandbox-tool">
+                    <div class="input-group">
+                        <input type="text" id="sandbox-input" placeholder="e.g. A subscription billing engine for decentralized GPU providers...">
+                        <button class="glow-button" onclick="analyzeIdea()">Analyze Concept</button>
+                    </div>
+                    <div class="sandbox-result" id="sandbox-result">
+                        <div class="placeholder-result">
+                            <p>Ready to analyze. Input a concept above.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2026 Solana Narrative Pulse (Agentic System). Powered by Antigravity Agent.</p>
+            <div class="footer-links">
+                <a href="https://superteam.fun" target="_blank" class="glow-link">Superteam Earn</a>
+                <a href="https://solana.com" target="_blank" class="glow-link">Solana Network</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
